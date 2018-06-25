@@ -13,20 +13,20 @@
 * src/Solution10973.java
 * [https://www.acmicpc.net/problem/10973](https://www.acmicpc.net/problem/10973)
 
-> 모든 순열을 구해서 정답을 찾는것이 아님. 범위가 너무 큼 **N(1 ≤ N ≤ 10,000)**
-> 입력 값을 기준으로 다음 순열을 구하면 됨.
+> 모든 순열을 구해서 정답을 찾는것이 아님. 범위가 너무 큼 **N(1 ≤ N ≤ 10,000)** <br>
+> 입력 값을 기준으로 다음 순열을 구하면 됨. <br>
 
 ### 모든 순열
 * src/Solution10974.java
 * [https://www.acmicpc.net/problem/10974](https://www.acmicpc.net/problem/10974)
 
-> 범위가 **N(1 ≤ N ≤ 8)** 즉, 8! 이기에 가능.
-> 10! 은 **3628800**
+> 범위가 **N(1 ≤ N ≤ 8)** 즉, 8! 이기에 가능. <br>
+> 10! 은 **3628800** <br>
 
 ### 순열의 순서
 * src/Solution1722.java
 * [https://www.acmicpc.net/problem/1722](https://www.acmicpc.net/problem/1722)
 
-> 반대방향 순열을 구할때는 부등호만 반대. reverse 는 해 줘야 함.
+> 반대방향 순열을 구할때는 부등호만 반대. reverse 는 해 줘야 함. <br>
 
 
