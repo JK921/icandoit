@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Solution1722 {
     public static void main(String[] args) throws Exception {
-        Scanner sc = new Scanner(new FileInputStream("./1722.txt"));
+        Scanner sc = new Scanner(new FileInputStream("./input/1722.txt"));
 
         int N = sc.nextInt();
         int[] arr = new int[N + 1];

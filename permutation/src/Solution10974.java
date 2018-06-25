@@ -12,7 +12,7 @@ public class Solution10974 {
     }
 
     public static void main(String[] args) throws Exception {
-        Scanner sc = new Scanner(new FileInputStream("./10974.txt"));
+        Scanner sc = new Scanner(new FileInputStream("./input/10974.txt"));
 
         N = sc.nextInt();
 
