@@ -1,5 +1,3 @@
-package dp;
-
 import java.io.FileInputStream;
 import java.util.Scanner;
 
