@@ -12,7 +12,7 @@ import java.util.StringTokenizer;
  */
 public class Solution06 {
     public static int N;
-    public static int[] dp;
+    public static long[] dp;
 
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("./input/06.txt")));
@@ -20,11 +20,11 @@ public class Solution06 {
         StringTokenizer st = new StringTokenizer(br.readLine());
         N = Integer.parseInt(st.nextToken());
 
-        dp = new int[N + 1];
+        dp = new long[N + 1];
 
         dp[0] = dp[1] = 1;
         for (int n = 2; n <= N; n++) {
-            dp[n] = dp[n - 2] + dp[n - 1];
+            dp[n] = (dp[n - 2] % 1000007) + (dp[n - 1] % 1000007);
         }
 
         System.out.println(dp[N] % 1000007);
