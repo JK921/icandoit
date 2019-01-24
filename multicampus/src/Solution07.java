@@ -21,16 +21,11 @@ public class Solution07 {
         N = Integer.parseInt(st.nextToken());
         dp = new int[1000001];
 
-        for (int i = 1; i < 1000; i++) {
-            dp[i * i] = 1;
-        }
-
-        for (int n = 2; n <= N; n++) {
-            if (dp[n] == 0) {
-                dp[n] = n;
-                for (int i = 1; i < n; i++) {
-                    dp[n] = Math.min(dp[n], dp[i] + dp[n - i]);
-                }
+        for (int n = 1; n <= N; n++) {
+            dp[n] = n;
+            for (int i = 2; i * i <= n; i++) {
+                // 구하려는 수 보다 작은 제곱수 활용
+                dp[n] = Math.min(dp[n], dp[n - (i * i)] + 1);
             }
         }
 
