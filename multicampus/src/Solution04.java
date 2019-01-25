@@ -37,11 +37,11 @@ public class Solution04 {
 
         for (int n = 3; n <= N; n++) {
             // cards[n]을 선택하지 않는 경우
-            dp[n] = Math.max(dp[n], dp[n - 1]);
-
+            long selected = Math.max(dp[n], dp[n - 1]);
             // cards[n]을 선택하는 경우
-            dp[n] = Math.max(dp[n - 2] + cards[n], dp[n - 3] + cards[n - 1] + cards[n]);
-
+            long deselected = Math.max(dp[n - 2] + cards[n], dp[n - 3] + cards[n - 1] + cards[n]);
+            
+            dp[n] = Math.max(selected, deselected);
         }
 
         System.out.println(dp[N]);
